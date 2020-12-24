@@ -4,9 +4,9 @@ flask 初版
 ln -s .env_development .env
 
 # 建立migration
-flask db init
-flask db migrate
-flask db upgrade
+flask db init<br/>
+flask db migrate<br/>
+flask db upgrade<br/>
 
 # 建立seed
-flask seed run
+flask seed run<br/>
