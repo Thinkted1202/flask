@@ -1,0 +1,27 @@
+{% extends "mains/layouts/main.html" %}
+{% block css %}
+<link media="screen" rel="stylesheet" href="{{ url_for('static', filename='style/mains/css/pg_system.css') }}" />
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div class="wrap__inner">
+        <div class="box-system box-system-server">
+            <div class="box-system__imgbox">
+                <i class="icon-server box-system__icon"></i>
+            </div>
+            <div class="box-system__info">
+                <h2 class="box-system__title">發生錯誤500</h2>
+                <h3 class="box-system__subtitle">伺服器內部發生錯誤!</h3>
+                <div class="box-system__btnbox">
+                    <a href="/" class="btn btn--primary btn--md btn--block box-system__btn" title="回首頁">回首頁</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{{url_for('static', filename='js/mains/errors/500.js') }}"> </script>
+{% endblock %}
